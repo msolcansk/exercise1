@@ -1,0 +1,11 @@
+---
+- hosts: all
+  gather_facts: true
+  become: true
+  roles:
+    - role: geerlingguy.docker
+      vars:
+        docker_daemon_options:
+          log-driver: syslog
+          log-opts: 
+            syslog-address: "udp://127.0.0.1:514"

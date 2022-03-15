@@ -1,0 +1,12 @@
+---
+roles:
+  # Install required roles from Ansible Galaxy.
+  - name: geerlingguy.docker
+    version: 4.1.3
+
+
+collections:
+  # Install required collections from Ansible Galaxy.
+  - name: geerlingguy.docker
+    version: 4.1.3
+    source: https://galaxy.ansible.com
