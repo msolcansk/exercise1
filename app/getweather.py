@@ -14,7 +14,7 @@ w = observation.weather
 
 city = owm_city
 weather_description = w.detailed_status
-temperature = w.temperature('')['temp']
+temperature = w.temperature('fahrenheit')['temp']
 humidity = w.humidity
 
 print(f'city="{city}", description="{weather_description}", temp="{temperature}", humidity="{humidity}"')
