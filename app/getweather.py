@@ -26,4 +26,4 @@ weather_description = w.detailed_status
 temperature = w.temperature('fahrenheit')['temp']
 humidity = w.humidity
 
-print(f'city="{city}", description="{weather_description}", temp="{temperature}", humidity="{humidity}"')
+print(f'city="{city}", description="{weather_description}", temp={temperature}, humidity={humidity}')
