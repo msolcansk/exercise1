@@ -6,8 +6,7 @@ owm_api_key = os.getenv('OWM_API_KEY')
 owm_city = os.environ.get('OWM_CITY')
 
 
-
-# Stop if environment variables are defined
+# Stop if environment variables are exported
 if owm_api_key is None:
     print("OWM_API_KEY needs to be exported !")
     exit()
