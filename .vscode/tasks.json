@@ -19,7 +19,7 @@
                 "docker-build"
             ],
             "python": {
-                "file": "app/getweather.py"
+                "file": "getweather.py"
             },
             "dockerRun": {
                 "envFiles": [".env"]
