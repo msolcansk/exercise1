@@ -69,9 +69,16 @@ Vagrant.configure("2") do |config|
   #   apt-get install -y python3-venv
   # SHELL
   config.vm.provision "shell", inline: <<-SHELL
+    echo "--> Update system and install pip"
     apt-get update
     apt-get install -y python3-venv \
         python3-pip
+    
+    echo "--> Install ansible via pip"
+    pip3 install ansible
+    
+    echo "--> Install ansible-galaxy requirements"
+    ansible-galaxy install -r exercise1/requirements.yml
     
     
   SHELL
